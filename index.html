@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bakso 7777</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff4dc;--ink:#2a1608;--red:#c8231a;--broth:#f2a81d;--card:#ffe6a8;--muted:#6b4a2b}
+@media (prefers-color-scheme:dark){:root{--bg:#24120a;--ink:#ffeccb;--red:#ff5a45;--broth:#f2a81d;--card:#3a1f12;--muted:#d1b08a}}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Nunito',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+h1,h2,.logo{font-family:'Bowlby One','Impact',sans-serif;font-weight:400;line-height:1.05}
+a{color:inherit}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 5vw}
+.logo{font-size:1.5rem;color:var(--red);text-decoration:none}
+nav a{margin-left:18px;font-weight:800;text-decoration:none}
+nav a:hover{color:var(--red)}
+.hero{padding:6vh 5vw 8vh;display:grid;gap:32px;grid-template-columns:1.2fr 1fr;align-items:center;max-width:1100px;margin:auto}
+.hero h1{font-size:clamp(3rem,10vw,6.5rem);color:var(--red)}
+.hero p{font-size:1.15rem;max-width:34ch;margin:18px 0 26px;color:var(--muted)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:14px 26px;border-radius:99px;font-weight:800;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--broth);outline-offset:3px}
+.bowl{width:100%;max-width:380px;margin:auto}
+section{padding:7vh 5vw;max-width:1100px;margin:auto}
+h2{font-size:clamp(1.8rem,5vw,2.8rem);margin-bottom:24px}
+.menu{display:grid;gap:14px}
+.item{display:flex;justify-content:space-between;gap:16px;align-items:baseline;background:var(--card);padding:16px 20px;border-radius:14px}
+.item b{font-size:1.1rem}
+.item small{display:block;color:var(--muted)}
+.price{font-weight:800;color:var(--red);white-space:nowrap}
+.why{background:var(--red);color:#fff;max-width:none;text-align:center}
+.why h2{color:var(--broth)}
+.why p{max-width:52ch;margin:auto;font-size:1.1rem}
+.info{display:grid;gap:20px;grid-template-columns:1fr 1fr}
+.info div{background:var(--card);padding:22px;border-radius:14px}
+.info h3{margin-bottom:6px;color:var(--red)}
+footer{text-align:center;padding:30px 5vw;color:var(--muted);font-size:.9rem}
+@media(max-width:720px){.hero,.info{grid-template-columns:1fr}nav a:not(.keep){display:none}.bowl{max-width:260px}}
+@media (prefers-reduced-motion:no-preference){.steam{animation:rise 3s ease-in-out infinite}.steam:nth-child(2){animation-delay:1s}.steam:nth-child(3){animation-delay:2s}}
+@keyframes rise{0%{transform:translateY(8px);opacity:0}50%{opacity:.7}100%{transform:translateY(-12px);opacity:0}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#">Bakso 7777</a>
+  <nav><a href="#menu">Menu</a><a href="#info">Lokasi</a><a class="keep" href="#pesan">Pesan</a></nav>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <h1>Bakso 7777</h1>
+    <p>Kuah gurih, bakso kenyal, sambal nendang. Mangkok pertama bikin balik lagi.</p>
+    <a class="btn" href="#pesan">Pesan sekarang</a>
+  </div>
+  <svg class="bowl" viewBox="0 0 300 260" role="img" aria-label="Semangkok bakso">
+    <g stroke="#f2a81d" stroke-width="5" fill="none" stroke-linecap="round">
+      <path class="steam" d="M110 70c-12-14 12-24 0-38"/>
+      <path class="steam" d="M150 70c-12-14 12-24 0-38"/>
+      <path class="steam" d="M190 70c-12-14 12-24 0-38"/>
+    </g>
+    <path d="M30 110h240c0 80-50 130-120 130S30 190 30 110z" fill="#c8231a"/>
+    <ellipse cx="150" cy="110" rx="120" ry="22" fill="#f2a81d"/>
+    <circle cx="105" cy="104" r="26" fill="#8a5a34"/>
+    <circle cx="160" cy="98" r="30" fill="#9a6640"/>
+    <circle cx="207" cy="108" r="22" fill="#8a5a34"/>
+    <circle cx="150" cy="116" r="6" fill="#4caf50"/><circle cx="125" cy="122" r="5" fill="#4caf50"/>
+    <rect x="95" y="238" width="110" height="10" rx="5" fill="#8f1710"/>
+  </svg>
+</div>
+
+<section id="menu">
+  <h2>Menu</h2>
+  <div class="menu">
+    <div class="item"><div><b>Bakso Urat</b><small>Bakso urat besar, mi, bihun, sawi</small></div><span class="price">Rp 18.000</span></div>
+    <div class="item"><div><b>Bakso Telur</b><small>Isi telur puyuh utuh</small></div><span class="price">Rp 20.000</span></div>
+    <div class="item"><div><b>Bakso Super 7777</b><small>Tujuh bakso campur, tetelan, pangsit goreng</small></div><span class="price">Rp 28.000</span></div>
+    <div class="item"><div><b>Mie Ayam Bakso</b><small>Mie ayam dengan dua bakso</small></div><span class="price">Rp 22.000</span></div>
+    <div class="item"><div><b>Es Teh / Es Jeruk</b><small>Dingin, manis, segar</small></div><span class="price">Rp 5.000</span></div>
+  </div>
+</section>
+
+<section class="why">
+  <h2>Kenapa 7777?</h2>
+  <p>Tujuh kali kuah direbus, tujuh bumbu rahasia, dan tujuh bakso di mangkok spesial kami. Angka hoki, rasa pasti.</p>
+</section>
+
+<section id="info">
+  <h2>Lokasi dan jam buka</h2>
+  <div class="info">
+    <div><h3>Alamat</h3><p>Jl. Contoh No. 77, Kota Anda<br>(ganti dengan alamat asli)</p></div>
+    <div><h3>Jam buka</h3><p>Setiap hari, 10.00 – 21.00 WIB</p></div>
+  </div>
+</section>
+
+<section id="pesan" style="text-align:center">
+  <h2>Pesan lewat WhatsApp</h2>
+  <p style="margin-bottom:20px">Antar atau ambil sendiri. Tulis pesanan Anda, kami siapkan.</p>
+  <a class="btn" href="https://wa.me/6281234567777?text=Halo%20Bakso%207777%2C%20saya%20mau%20pesan" target="_blank" rel="noopener">Chat WhatsApp</a>
+</section>
+</main>
+
+<footer>© 2026 Bakso 7777. Semua hak dilindungi.</footer>
+</body>
+</html>
